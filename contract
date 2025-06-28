@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legal Contract Link</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: blue;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 30px;
+      font-weight: bold;
+      color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Link Below</h1>
+  <a onclick="showMessage()">Click Here</a>
+
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = 
+        "By clicking on this link, you have now entered a legal contract with your brother. " +
+        "You will now pay 23 per mile driven to and from locations other than work.";
+    }
+  </script>
+
+</body>
+</html>
